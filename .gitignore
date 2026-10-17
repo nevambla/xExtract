@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+# Contains your X session cookies and scraped data — never commit
+data/
+.DS_Store

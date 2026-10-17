@@ -1,0 +1,20 @@
+[project]
+name = "xextract"
+version = "0.1.0"
+description = "Scrape all tweets from an X user into SQLite, with a log of every run"
+readme = "README.md"
+authors = [
+    { name = "manunevado", email = "mnblanco33@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "twscrape>=0.20.1",
+]
+
+[project.scripts]
+xextract = "xextract:main"
+
+[build-system]
+requires = ["uv_build>=0.11.17,<0.12.0"]
+build-backend = "uv_build"
